@@ -1,10 +1,10 @@
 extends Node2D
-@onready var garlic_container: HBoxContainer = $GarlicContainer
-@onready var garlic: TextureRect = $AppleContainer1/apple1
-@onready var garlic_2: TextureRect = $AppleContainer1/apple2
-@onready var garlic_3: TextureRect = $AppleContainer1/apple3
-@onready var garlic_4: TextureRect = $AppleContainer2/apple4
-@onready var garlic_5: TextureRect = $AppleContainer2/apple5
+@onready var garlic_container: GridContainer = $GarlicContainer
+@onready var garlic: TextureRect = $GarlicContainer/garlic
+@onready var garlic_2: TextureRect = $GarlicContainer/garlic2
+@onready var garlic_3: TextureRect = $GarlicContainer/garlic3
+@onready var garlic_4: TextureRect = $GarlicContainer/garlic4
+@onready var garlic_5: TextureRect = $GarlicContainer/garlic5
 @onready var level: RichTextLabel = $Level
 @onready var timer: RichTextLabel = $Timer
 

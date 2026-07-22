@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://qsearq14qptt"]
+
+[ext_resource type="Script" uid="uid://6k5ulqd2gwg1" path="res://minigame 1.gd" id="1_d1dk1"]
+
+[node name="ThemedTimer" type="Node2D" unique_id=340984266]
+script = ExtResource("1_d1dk1")
+
+[node name="timer" type="RichTextLabel" parent="." unique_id=2090886129]
+offset_right = 40.0
+offset_bottom = 40.0

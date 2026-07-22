@@ -1,3 +1,29 @@
 [gd_scene format=3 uid="uid://dr6hy6et3yiip"]
 
-[node name="player" type="Node2D" unique_id=639713629]
+[ext_resource type="Script" uid="uid://cd30n0q3s7of8" path="res://scenes/player.gd" id="1_g2els"]
+[ext_resource type="Texture2D" uid="uid://b1dmixnucvhor" path="res://image-Photoroom (3).png" id="2_qhqgy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_og05i"]
+size = Vector2(19.600754, 19.561771)
+
+[node name="Player" type="CharacterBody2D" unique_id=806083556]
+position = Vector2(4.999998, -3)
+scale = Vector2(0.16764002, 0.14806262)
+script = ExtResource("1_g2els")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2042499673]
+texture = ExtResource("2_qhqgy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1459078659]
+position = Vector2(-29.825804, -0.21073723)
+rotation = -3.1415925
+scale = Vector2(23.129333, -31.785471)
+shape = SubResource("RectangleShape2D_og05i")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1842407879]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=1291688039]
+position = Vector2(-29.825802, -0.21073723)
+rotation = -3.1415925
+scale = Vector2(23.129333, -31.785471)
+shape = SubResource("RectangleShape2D_og05i")
