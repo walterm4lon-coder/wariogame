@@ -1,9 +1,11 @@
 [gd_scene format=3 uid="uid://dg4pjuej0o8te"]
 
+[ext_resource type="Script" uid="uid://l5wiy8d8jfye" path="res://scenes/timer_screen.gd" id="1_a74lg"]
 [ext_resource type="Texture2D" uid="uid://vjcaw7683twu" path="res://table.png" id="1_bl4ss"]
 [ext_resource type="Texture2D" uid="uid://c383rase0l87y" path="res://image-Photoroom (2).png" id="2_a74lg"]
 
-[node name="level_scene" type="Node2D" unique_id=1303635718]
+[node name="minigame_1" type="Node2D" unique_id=1303635718]
+script = ExtResource("1_a74lg")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1038535305]
 offset_right = 40.0
@@ -16,46 +18,56 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="." unique_id=704802752]
+[node name="AppleContainer1" type="HBoxContainer" parent="." unique_id=704802752]
 offset_left = 426.0
 offset_top = 178.0
 offset_right = 4122.0
 offset_bottom = 1098.0
 scale = Vector2(0.17752776, 0.17378883)
 
-[node name="apple1" type="TextureRect" parent="HBoxContainer2" unique_id=420795402]
+[node name="apple1" type="TextureRect" parent="AppleContainer1" unique_id=420795402]
 layout_mode = 2
 texture = ExtResource("2_a74lg")
 
-[node name="apple2" type="TextureRect" parent="HBoxContainer2" unique_id=331974656]
+[node name="apple2" type="TextureRect" parent="AppleContainer1" unique_id=331974656]
 layout_mode = 2
 texture = ExtResource("2_a74lg")
 
-[node name="apple3" type="TextureRect" parent="HBoxContainer2" unique_id=1956753609]
+[node name="apple3" type="TextureRect" parent="AppleContainer1" unique_id=1956753609]
 layout_mode = 2
 texture = ExtResource("2_a74lg")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1205928975]
+[node name="AppleContainer2" type="HBoxContainer" parent="." unique_id=1205928975]
 offset_left = 465.0
 offset_top = 264.0
 offset_right = 1941.0
 offset_bottom = 1184.0
 scale = Vector2(0.20511034, 0.20219104)
 
-[node name="apple4" type="TextureRect" parent="HBoxContainer" unique_id=1930442177]
+[node name="apple4" type="TextureRect" parent="AppleContainer2" unique_id=1930442177]
 layout_mode = 2
 texture = ExtResource("2_a74lg")
 
-[node name="apple5" type="TextureRect" parent="HBoxContainer" unique_id=1740037195]
+[node name="apple5" type="TextureRect" parent="AppleContainer2" unique_id=1740037195]
 layout_mode = 2
 texture = ExtResource("2_a74lg")
 
 [node name="Timer" type="RichTextLabel" parent="." unique_id=8067268]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 505.0
+offset_top = 431.0
+offset_right = 705.0
+offset_bottom = 574.0
+scale = Vector2(0.84294033, 0.74200004)
+theme_override_font_sizes/normal_font_size = 104
 text = "0.0"
+fit_content = true
 
-[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=380805716]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="Level" type="RichTextLabel" parent="." unique_id=380805716]
+offset_left = 483.0
+offset_top = 52.0
+offset_right = 893.885
+offset_bottom = 124.0
 scale = Vector2(1.1436458, 1.0679731)
+theme_override_font_sizes/normal_font_size = 52
+text = "Level 1"
+fit_content = true
