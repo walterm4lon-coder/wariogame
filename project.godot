@@ -15,13 +15,17 @@ run/main_scene="uid://cleq6m2xuvjbh"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Global="*uid://coflt6w0tysdr"
+
 [display]
 
 window/stretch/mode="viewport"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg", "res://addons/godot_super_wakatime/plugin.cfg")
+enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
 
 [physics]
 
