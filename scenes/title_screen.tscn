@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://cleq6m2xuvjbh"]
+
+[ext_resource type="Texture2D" uid="uid://dh73f7fhdawck" path="res://titlescreenbackgr.png" id="1_fgkus"]
+[ext_resource type="Script" uid="uid://wbeldh5boxuy" path="res://scenes/title_screen.gd" id="1_sa3yf"]
+
+[node name="TitleScreen" type="Node2D" unique_id=1337787724]
+scale = Vector2(0.68895155, 0.6888241)
+script = ExtResource("1_sa3yf")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1164075671]
+offset_right = 1672.0
+offset_bottom = 941.0
+texture = ExtResource("1_fgkus")
+
+[node name="Title" type="RichTextLabel" parent="." unique_id=1805142833]
+clip_contents = false
+offset_left = 464.47388
+offset_top = 137.91618
+offset_right = 1275.8516
+offset_bottom = 291.80164
+theme_override_constants/line_separation = 1
+theme_override_constants/outline_size = 21
+theme_override_font_sizes/normal_font_size = 108
+text = "Darker Fantasy"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1419476160]
+offset_left = 673.4871
+offset_top = 722.9712
+offset_right = 1004.42474
+offset_bottom = 988.6413
+
+[node name="Start" type="Button" parent="VBoxContainer" unique_id=1992080784]
+layout_mode = 2
+theme_override_constants/outline_size = 7
+theme_override_font_sizes/font_size = 33
+text = "Explore"
+
+[node name="Settings" type="Button" parent="VBoxContainer" unique_id=1235163395]
+layout_mode = 2
+theme_override_constants/outline_size = 7
+theme_override_font_sizes/font_size = 33
+text = "Ordinance"
+
+[node name="Quit" type="Button" parent="VBoxContainer" unique_id=813275404]
+layout_mode = 2
+theme_override_constants/outline_size = 7
+theme_override_font_sizes/font_size = 33
+text = "Acquit"
+
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
