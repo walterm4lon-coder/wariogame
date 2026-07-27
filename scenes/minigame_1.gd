@@ -6,6 +6,7 @@ extends Node2D
 
 var garlic_collected = 0 # just keeping track of garlic collected
 var timer_end = false # boolean (true or false) stating whether the timer ended
+var round_finished = false
 
 func _ready() -> void:
 
@@ -18,24 +19,27 @@ func _ready() -> void:
 	#after this is compeleted...
 	timer_end = true # now we're saying "oh ye you ran out of time"
 
-func _process(_delta: float) -> void: # running every frame brochacho
-	
-	if garlic_collected == 3: # the double equals is just an argument asking if it's the same, with "=" it'll give an error
-		if Global.minigames_done > 3: # we access a global script and see how many minigames have been compeleted
-			get_tree().change_scene_to_file("res://scenes/done_screen.tscn") # change current play scene into another, but you make your own finish screen in a later challenge, dont worry abt this rn
-		else:
-			get_tree().change_scene_to_file("res://scenes/timer_screen.tscn") # go back to the intermission scene
-	
-	elif timer_end: # if the timer does end...
-		Global.minigames_done -=1 #go back a minigame
-		Global.lives -= 1 # lose ur lives
-		get_tree().change_scene_to_file("res://scenes/timer_screen.tscn") # back to intermission
-		
+func _process(_delta: float) -> void:
+	if round_finished:
+		return
 
-func garlic_collect() -> void:
-	garlic_collected = garlic_collected + 1
-	print("GARLIC COUNT: ", garlic_collected)
-	return
+	if garlic_collected == 3:
+		round_finished = true
+		get_tree().change_scene_to_file("res://scenes/timer_screen.tscn")
+
+	elif timer_end:
+		round_finished = true
+
+		print("LIVES BEFORE: ", Global.lives)
+		Global.lives -= 1
+		print("LIVES AFTER: ", Global.lives)
+
+		if Global.lives <= 0:
+			print("OPENING LOSE SCREEN")
+			get_tree().change_scene_to_file("res://scenes/lose_screen.tscn")
+		else:
+			Global.minigames_done -= 1
+			get_tree().change_scene_to_file("res://scenes/timer_screen.tscn")
 
 
 func garlic_connect() -> void:

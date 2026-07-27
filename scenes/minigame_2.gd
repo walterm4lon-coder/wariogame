@@ -1,5 +1,6 @@
 extends Node2D
 @onready var themed_timer: Node2D = $ThemedTimer
+var round_finished = false
 
 var buttons_pressed := 0
 var timer_end = false
@@ -20,7 +21,7 @@ func _process(delta: float) -> void:
 	if timer_end:
 		Global.lives -= 1
 		Global.minigames_done -=1
-		get_tree().change_scene_to_file("res://scenes/timer_screen.tscn")
+		get_tree().change_scene_to_file("res://scenes/lose_screen.tscn")
 	
 
 

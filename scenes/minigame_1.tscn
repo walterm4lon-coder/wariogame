@@ -255,6 +255,6 @@ theme_override_font_sizes/normal_font_size = 68
 
 [connection signal="garlic_collected" from="Node2D" to="." method="garlic_collect"]
 [connection signal="garlic_collected" from="Node2D" to="." method="_on_node_2d_garlic_collected"]
-[connection signal="garlic_collected" from="Node2D2" to="." method="garlic_collect"]
 [connection signal="garlic_collected" from="Node2D2" to="." method="_on_node_2d_2_garlic_collected"]
+[connection signal="garlic_collected" from="Node2D2" to="." method="garlic_collect"]
 [connection signal="garlic_collected" from="Node2D3" to="." method="garlic_collect"]
