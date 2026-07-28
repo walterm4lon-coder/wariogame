@@ -19,9 +19,12 @@ func _process(delta: float) -> void:
 			get_tree().change_scene_to_file("res://scenes/timer_screen.tscn")
 	
 	if timer_end:
-		Global.lives -= 1
-		Global.minigames_done -=1
-		get_tree().change_scene_to_file("res://scenes/lose_screen.tscn")
+		if Global.lives <= 0:
+			get_tree().change_scene_to_file("res://scenes/lose_screen.tscn")
+		else:
+			Global.minigames_done -= 1
+			Global.lives = Global.lives - 1
+			get_tree().change_scene_to_file("res://scenes/timer_screen.tscn")
 	
 
 
@@ -31,3 +34,4 @@ func _on_pressed() -> void:
 
 func _on_button_1_pressed() -> void:
 	pass # Replace with function body.
+ 

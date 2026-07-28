@@ -315,8 +315,8 @@ libraries/ = SubResource("AnimationLibrary_eachr")
 autoplay = &"flyingbugs"
 
 [node name="ThemedTimer" parent="." unique_id=340984266 instance=ExtResource("5_6co8m")]
-position = Vector2(81.99997, 45)
-scale = Vector2(3.1208687, -0.6596503)
+position = Vector2(45, 40)
+scale = Vector2(3.605, 3.605)
 
 [connection signal="pressed" from="Button_1" to="Button_1" method="_on_pressed"]
 [connection signal="pressed" from="Button_2" to="Button_2" method="_on_pressed"]

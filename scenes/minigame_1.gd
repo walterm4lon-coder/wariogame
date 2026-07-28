@@ -23,28 +23,24 @@ func _process(_delta: float) -> void:
 	if round_finished:
 		return
 
-	if garlic_collected == 3:
+	if garlic_collected >= 3:
 		round_finished = true
+		print("MINIGAME 1 WON")
 		get_tree().change_scene_to_file("res://scenes/timer_screen.tscn")
 
 	elif timer_end:
 		round_finished = true
-
-		print("LIVES BEFORE: ", Global.lives)
 		Global.lives -= 1
-		print("LIVES AFTER: ", Global.lives)
 
 		if Global.lives <= 0:
-			print("OPENING LOSE SCREEN")
 			get_tree().change_scene_to_file("res://scenes/lose_screen.tscn")
 		else:
 			Global.minigames_done -= 1
 			get_tree().change_scene_to_file("res://scenes/timer_screen.tscn")
 
-
-func garlic_connect() -> void:
-	pass # Replace with function body.
-
+func garlic_collect() -> void:
+	garlic_collected += 1
+	print("GARLIC COUNT: ", garlic_collected)
 
 func _on_node_2d_garlic_collected() -> void:
 	pass # Replace with function body.

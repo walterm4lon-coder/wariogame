@@ -6,14 +6,9 @@ func _ready() -> void:
 	garlic_animation.play("victory")
 
 
-func _on_play_again_button_pressed() -> void:
-	Global.lives = 3
-	Global.minigames_done = 0
-	get_tree().change_scene_to_file("res://scenes/minigame_1.tscn")
-
 
 func _on_main_menu_button_pressed() -> void:
-	Global.lives = 3
+	Global.lives = 5
 	Global.minigames_done = 0
 	get_tree().change_scene_to_file("res://scenes/title_screen.tscn")
 
