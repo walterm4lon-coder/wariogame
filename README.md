@@ -14,11 +14,11 @@ I am making my first own game on GODOT!
 
 ## How to Play
 
-### Minigame 1 — Funky apples
+### Minigame 1 - Funky apples
 
 Move through the level and collect all three apples before time runs out.
 
-### Minigame 2 — Kill those beasts
+### Minigame 2 - Kill those beasts
 
 Find and press all seven bugs before the timer reaches zero.
 
