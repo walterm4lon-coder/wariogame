@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://malmyg811kfa"]
 
-[ext_resource type="Texture2D" uid="uid://dap1h6n5rps0t" path="res://scenes/happy ending.png" id="1_7avge"]
 [ext_resource type="Script" uid="uid://kuwxl6yuxvmj" path="res://scenes/done_screen.gd" id="1_k66lo"]
+[ext_resource type="Texture2D" uid="uid://h3lt702kkoqg" path="res://scenes/first picture.png" id="2_k66lo"]
 [ext_resource type="Texture2D" uid="uid://c383rase0l87y" path="res://image-Photoroom (2).png" id="3_c2erd"]
 
 [sub_resource type="Animation" id="Animation_t6dg5"]
@@ -79,7 +79,7 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 scale = Vector2(0.6894548, 0.689638)
-texture = ExtResource("1_7avge")
+texture = ExtResource("2_k66lo")
 
 [node name="Title" type="Label" parent="." unique_id=2026492670]
 layout_mode = 0

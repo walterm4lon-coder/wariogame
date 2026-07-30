@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dg4pjuej0o8te"]
 
 [ext_resource type="Script" uid="uid://l5wiy8d8jfye" path="res://scenes/timer_screen.gd" id="1_xna03"]
-[ext_resource type="Texture2D" uid="uid://vjcaw7683twu" path="res://table.png" id="2_0bi17"]
+[ext_resource type="Texture2D" uid="uid://c8l0ya4ny3ixa" path="res://scenes/scene.jpg" id="2_xna03"]
 [ext_resource type="Texture2D" uid="uid://c383rase0l87y" path="res://image-Photoroom (2).png" id="3_bseyb"]
 
 [node name="TimerScreen" type="Node2D" unique_id=1303635718]
@@ -10,8 +10,8 @@ script = ExtResource("1_xna03")
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1038535305]
 offset_right = 40.0
 offset_bottom = 40.0
-scale = Vector2(0.689285, 0.6883797)
-texture = ExtResource("2_0bi17")
+scale = Vector2(1.6807346, 1.6839377)
+texture = ExtResource("2_xna03")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="TextureRect" unique_id=196255912]
 layout_mode = 0
@@ -19,10 +19,10 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="GarlicContainer" type="GridContainer" parent="." unique_id=1723531109]
-offset_left = 451.99997
-offset_top = 164.0
-offset_right = 2668.0
-offset_bottom = 2008.0
+offset_left = 371.0
+offset_top = 426.0
+offset_right = 2587.0
+offset_bottom = 2270.0
 scale = Vector2(0.17472759, 0.15454824)
 theme_override_constants/h_separation = -144
 theme_override_constants/v_separation = -501
@@ -50,10 +50,10 @@ size_flags_stretch_ratio = 0.76
 texture = ExtResource("3_bseyb")
 
 [node name="Timer" type="RichTextLabel" parent="." unique_id=8067268]
-offset_left = 505.0
-offset_top = 431.0
-offset_right = 705.0
-offset_bottom = 574.0
+offset_left = 514.0
+offset_top = 158.0
+offset_right = 714.0
+offset_bottom = 301.0
 scale = Vector2(0.84294033, 0.74200004)
 theme_override_font_sizes/normal_font_size = 104
 text = "0.0"
