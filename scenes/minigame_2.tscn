@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cmu2udknolm5p"]
 
 [ext_resource type="Script" uid="uid://cmns1kdk2228d" path="res://scenes/minigame_2.gd" id="1_dqa6p"]
-[ext_resource type="Texture2D" uid="uid://dy53wldu7gnv4" path="res://grass.png" id="2_c3ytc"]
+[ext_resource type="Texture2D" uid="uid://cpyy17jx2d6d4" path="res://level 1.png" id="2_dqa6p"]
 [ext_resource type="Texture2D" uid="uid://bten77lpe8pp1" path="res://scenes/image-Photoroom (4).png" id="3_eachr"]
 [ext_resource type="Script" uid="uid://crm7htfhqjtew" path="res://scenes/button_1.gd" id="4_6tcq3"]
 [ext_resource type="PackedScene" uid="uid://qsearq14qptt" path="res://scenes/themed_timer.tscn" id="5_6co8m"]
@@ -218,9 +218,9 @@ script = ExtResource("1_dqa6p")
 [node name="TextureRect" type="TextureRect" parent="." unique_id=872058264]
 offset_right = 40.0
 offset_bottom = 40.0
-scale = Vector2(0.7500375, 0.6328493)
+scale = Vector2(0.6897633, 0.69452876)
 mouse_filter = 2
-texture = ExtResource("2_c3ytc")
+texture = ExtResource("2_dqa6p")
 
 [node name="Button_1" type="TextureButton" parent="." unique_id=1225053734]
 offset_left = 353.0
