@@ -47,3 +47,9 @@ Failing a minigame removes one life. When all five lives are gone, the game ends
 
 1. Clone the repository:
 https://github.com/walterm4lon-coder/wariogame
+
+##Credits
+Win screen image:https://images7.alphacoders.com/120/thumb-1920-1205979.png
+Lose screen image:https://t4.ftcdn.net/jpg/18/57/21/11/360_F_1857211160_Dgw7yFjJyxs8rZ2SgQr4FIp448unQgE0.jpg
+Apples, home screen, character and game screen:pinterest.com
+
